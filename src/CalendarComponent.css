@@ -1,0 +1,74 @@
+.calendar-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #3174ad;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-frame {
+    border: 5px solid blue;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust this value as needed */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    box-sizing: border-box;
+  }
+  
+  .rbc-calendar {
+    transition: all 0.3s ease;
+  }
+  
+  .rbc-month-view {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .rbc-day-bg {
+    transition: background-color 0.3s ease;
+  }
+  
+  .rbc-day-bg:hover {
+    background-color: #d1e0e0;
+    cursor: pointer;
+  }
+  
+  .rbc-toolbar button {
+    background-color: #3174ad;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rbc-toolbar button:hover {
+    background-color: #255a92;
+  }
+  
+  .rbc-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rbc-header {
+    color: #3174ad;
+  }
+  
+  .rbc-event {
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+  

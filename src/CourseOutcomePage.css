@@ -1,0 +1,98 @@
+/* Main container for the course outcome page */
+.course-outcome-page {
+    font-family: 'Roboto', sans-serif; /* Change to a modern and clean font */
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color for the whole page */
+    border-radius: 12px;
+    border: 3px solid rgba(138, 43, 226, 0.5); /* Border with purple glow */
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); /* Purple glowing shadow */
+    margin: 2rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .course-outcome-page:hover {
+    box-shadow: 0 0 25px rgba(138, 43, 226, 1); /* Stronger glow on hover */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #8a2be2; /* Purple color */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Section styles */
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Alternating section colors */
+  .section.left {
+    background-color: #e6e6fa; /* Lavender */
+    flex-direction: row;
+  }
+  
+  .section.right {
+    background-color: #f5f5dc; /* Beige */
+    flex-direction: row-reverse;
+  }
+  
+  /* Text styles */
+  .text {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .text p {
+    font-size: 1.2rem;
+    color: #4b0082; /* Indigo color for text */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Image styles */
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #8a2be2; /* Purple border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+  
+    .text,
+    .image {
+      width: 100%;
+    }
+  }
+  

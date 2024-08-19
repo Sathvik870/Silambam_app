@@ -1,0 +1,78 @@
+.main-page {
+  background-color: rgba(255, 255, 255, 0.8); /* Light grey with opacity */
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  background-image: none; /* Remove background image */
+}
+
+.main-nav {
+  margin-bottom: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #6a0dad;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #8a2be2;
+  box-shadow: 0px 4px 15px rgba(106, 13, 173, 0.6);
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+.logo-container {
+  margin-top: 30px;
+}
+
+.logo-image {
+  width: 8cm; /* Increased size to 8 cm in diameter */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.welcome-messages {
+  margin-top: 20px;
+}
+
+.welcome-text {
+  font-size: 28px; /* Increased font size */
+  color: #333;
+  font-weight: bold;
+}
+
+.outcome-button-container {
+  margin-top: 20px;
+}
+
+.outcome-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #6a0dad;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.outcome-button:hover {
+  background-color: #8a2be2;
+  box-shadow: 0px 4px 15px rgba(106, 13, 173, 0.6);
+  transform: scale(1.05);
+  color: #ffffff;
+}

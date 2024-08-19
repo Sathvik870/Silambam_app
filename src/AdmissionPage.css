@@ -1,0 +1,139 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling with background image */
+body {
+    background: url('E:\\REACT\\mainadmin.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ensure padding to prevent content from being cut off */
+}
+
+/* Container styling with opacity */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: auto; /* Auto margin to center form vertically */
+}
+
+/* Form title */
+h2 {
+    grid-column: span 2;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+label {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Full width input for larger fields */
+label.full-width {
+    grid-column: span 2;
+}
+
+/* Input and select styling */
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+textarea, 
+select {
+    padding: 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="date"]:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+/* Checkbox and radio styling */
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Fieldset styling */
+fieldset {
+    grid-column: span 2;
+    border: 1px solid #dddddd;
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+legend {
+    font-size: 1rem;
+    color: #444444;
+    font-weight: bold;
+}
+
+/* Textarea styling */
+textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    grid-column: span 2;
+    background-color: #2575fc;
+    color: #ffffff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1a5bbd;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    form {
+        padding: 1rem;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        grid-column: span 1;
+    }
+
+    button {
+        grid-column: span 1;
+    }
+}
